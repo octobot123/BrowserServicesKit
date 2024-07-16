@@ -65,7 +65,8 @@ public class AdClickAttributionRulesMutator {
         return TrackerData(trackers: attributedTrackers,
                            entities: trackerData.entities,
                            domains: trackerData.domains,
-                           cnames: trackerData.cnames)
+                           cnames: trackerData.cnames,
+                           cpm: trackerData.cpm)
     }
 
     private func normalizeRule(_ rule: String) -> String {

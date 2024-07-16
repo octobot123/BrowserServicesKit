@@ -358,7 +358,7 @@ public class ContentBlockerRulesManager: CompiledRuleListsSource {
                 }
             }
         }
-        return TrackerData(trackers: trackers, entities: entities, domains: domains, cnames: cnames)
+        return TrackerData(trackers: trackers, entities: entities, domains: domains, cnames: cnames, cpm: tds.cpm)
     }
 
     private func compilationCompleted() {

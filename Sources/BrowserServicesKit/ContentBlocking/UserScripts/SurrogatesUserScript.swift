@@ -203,7 +203,7 @@ open class SurrogatesUserScript: NSObject, UserScript, WKScriptMessageHandlerWit
         if let data = encodedSurrogateTrackerData {
             trackerData = data
         } else {
-            let encodedData = try? JSONEncoder().encode(TrackerData(trackers: [:], entities: [:], domains: [:], cnames: [:]))
+            let encodedData = try? JSONEncoder().encode(TrackerData(trackers: [:], entities: [:], domains: [:], cnames: [:], cpm: nil))
             trackerData = String(data: encodedData!, encoding: .utf8)!
         }
 

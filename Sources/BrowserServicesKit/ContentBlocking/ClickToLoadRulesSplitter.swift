@@ -73,7 +73,8 @@ public struct ClickToLoadRulesSplitter {
         return TrackerData(trackers: trackers,
                            entities: entities,
                            domains: domains,
-                           cnames: originalTDS.cnames)
+                           cnames: originalTDS.cnames,
+                           cpm: originalTDS.cpm)
     }
 
     private func processCTLActions(_ trackers: [String: KnownTracker]) -> (mainTrackers: [String: KnownTracker], ctlTrackers: [String: KnownTracker]) {

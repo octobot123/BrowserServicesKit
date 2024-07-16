@@ -69,7 +69,8 @@ public struct AdClickAttributionRulesSplitter {
         return TrackerData(trackers: trackers,
                            entities: trackerData.entities,
                            domains: trackerData.domains,
-                           cnames: trackerData.cnames)
+                           cnames: trackerData.cnames,
+                           cpm: trackerData.cpm)
     }
 
     private func makeTrackerDataForAttribution(from trackerData: TrackerData) -> TrackerData {
@@ -89,7 +90,7 @@ public struct AdClickAttributionRulesSplitter {
                 domains[domain] = entity.key
             }
         }
-        return TrackerData(trackers: allowlistedTrackers, entities: entities, domains: domains, cnames: nil)
+        return TrackerData(trackers: allowlistedTrackers, entities: entities, domains: domains, cnames: nil, cpm: trackerData.cpm)
     }
 
 }
