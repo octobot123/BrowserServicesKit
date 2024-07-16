@@ -86,8 +86,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/duckduckgo/TrackerRadarKit",
       "state" : {
-        "revision" : "1403e17eeeb8493b92fb9d11eb8c846bb9776581",
-        "version" : "2.1.2"
+        "branch" : "fcappelli/cpm_poc",
+        "revision" : "0ba6c83a6ca033d1b171764725a54b8944c369e5"
       }
     },
     {
