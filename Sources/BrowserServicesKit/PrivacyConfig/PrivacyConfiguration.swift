@@ -97,6 +97,7 @@ public protocol PrivacyConfiguration {
 
     /// Removes given domain from locally unprotected list.
     func userEnabledProtection(forDomain: String)
+    
     /// Adds given domain to locally unprotected list.
     func userDisabledProtection(forDomain: String)
 }
